@@ -1,0 +1,30 @@
+{
+  "name": "problem-19",
+  "version": "1.0.0",
+  "description": "https://projecteuler.net/problem=19",
+  "main": "./app/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "jasmine": "^2.5.3",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "start": "npm run clean && npm run build && npm run run",
+    "start:dev": "npm run clean && npm run build:dev && npm run run",
+    "build": "webpack --config webpack.confg.prod.js",
+    "build:dev": "webpack --config webpack.confg.dev.js",
+    "clean": "rimraf dist",
+    "run": "node dist/index.js",
+    "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
+  },
+  "keywords": [
+    "euler",
+    "problem 19"
+  ],
+  "author": "Gopala Reddy",
+  "license": "ISC"
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORDecryptionApp", "XORDecryptionApp\XORDecryptionApp.csproj", "{BFC39BB2-408D-47FF-A27F-34324BCA50CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORDecryptionLib", "XORDecryptionLib\XORDecryptionLib.csproj", "{35B90C4E-3145-43B1-82D1-CAB089272480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORDecryptionLib.Tests", "XORDecryptionLib.Tests\XORDecryptionLib.Tests.csproj", "{34BFC13A-D663-4FE4-A552-A17C009CB6DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC39BB2-408D-47FF-A27F-34324BCA50CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC39BB2-408D-47FF-A27F-34324BCA50CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC39BB2-408D-47FF-A27F-34324BCA50CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC39BB2-408D-47FF-A27F-34324BCA50CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B90C4E-3145-43B1-82D1-CAB089272480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B90C4E-3145-43B1-82D1-CAB089272480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B90C4E-3145-43B1-82D1-CAB089272480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B90C4E-3145-43B1-82D1-CAB089272480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BFC13A-D663-4FE4-A552-A17C009CB6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BFC13A-D663-4FE4-A552-A17C009CB6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BFC13A-D663-4FE4-A552-A17C009CB6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BFC13A-D663-4FE4-A552-A17C009CB6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
