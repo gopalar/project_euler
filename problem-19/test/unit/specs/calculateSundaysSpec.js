@@ -16,7 +16,7 @@ describe("Calculate Sundays: ", function () {
         expect(totalSundays).toEqual(171);
     });
     
-    it("except 1 sunday", function () {    
+    it("expect 1 sunday", function () {    
         // Arrange
         let start = new Date('1/1/2016');
         let end = new Date('12/31/2016');
@@ -34,7 +34,9 @@ describe("Calculate Sundays: ", function () {
         let end = new Date('1/1/1901');
         
         // Act and Assert
-        expect(calculateSundays(start, end)).toThrowError(errors.invalidDateRange);
+        expect(function() {
+            calculateSundays(start, end);
+        }).toThrowError(Error, errors.invalidDateRange);
     });
 
     it("Must throw error, when start date is invalid", function () {    
@@ -43,7 +45,9 @@ describe("Calculate Sundays: ", function () {
         let end = new Date('12/31/2000');
         
         // Act and Assert
-        expect(calculateSundays(start, end)).toThrowError(errors.invalidStartDate);
+        expect(function(){
+            calculateSundays(start, end);
+        }).toThrowError(Error, errors.invalidStartDate);
     });
 
     it("Must throw error, when end date is invalid", function () {  
@@ -52,6 +56,8 @@ describe("Calculate Sundays: ", function () {
         let end = new Date('12/1/2000');
         
         // Act and Assert
-        expect(calculateSundays(start, end)).toThrowError(errors.invalidEndDate);
+        expect(function(){
+            calculateSundays(start, end);
+        }).toThrowError(Error, errors.invalidEndDate);
     });
 });

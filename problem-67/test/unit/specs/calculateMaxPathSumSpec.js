@@ -15,7 +15,7 @@ describe("Maximum path sum II: ", function () {
         expect(maxPathSum).toEqual(4);
     });
     
-    it("except 1 with triangle 1 (only one row).", function () {    
+    it("expect 1 with triangle 1 (only one row).", function () {    
         // Arrange
         let triangle = [[1]];
 
@@ -32,7 +32,9 @@ describe("Maximum path sum II: ", function () {
         let triangle = {};
 
         // Acct and Assert
-        expect(calculateMaxPathSum(triangle)).toThrowError(errors.invalidInput);
+        expect(function(){
+            calculateMaxPathSum(triangle);    
+        }).toThrowError(Error, errors.invalidInput);
     });
 
     it("Must throw error, when input param is undefined.", function () {
@@ -40,6 +42,8 @@ describe("Maximum path sum II: ", function () {
         let triangle;
 
         // Acct and Assert
-        expect(calculateMaxPathSum(triangle)).toThrowError(errors.invalidInput);
+        expect(function(){
+            calculateMaxPathSum(triangle);
+        }).toThrowError(Error, errors.invalidInput);
     });
 });
